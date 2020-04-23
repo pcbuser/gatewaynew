@@ -46,7 +46,7 @@ spring:
         - id: repair
           uri: http://repairprocessings:8080
           predicates:
-            - Path=/repairProcessings/**/repairProcessings/** 
+            - Path=/repairProcessings/**
         - id: mypage
           uri: http://logs:8080
           predicates:
