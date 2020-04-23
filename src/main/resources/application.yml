@@ -40,15 +40,15 @@ spring:
     gateway:
       routes:
         - id: accept
-          uri: http://accept:8080
+          uri: http://acceptprocessings:8080
           predicates:
             - Path=/acceptProcessings/** 
         - id: repair
-          uri: http://repair:8080
+          uri: http://repairprocessings:8080
           predicates:
             - Path=/repairProcessings/**/repairProcessings/** 
         - id: mypage
-          uri: http://mypage:8080
+          uri: http://logs:8080
           predicates:
             - Path= /logs/**
       globalcors:
